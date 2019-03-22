@@ -22,7 +22,7 @@ group = 'io.ostenant.springboot.sample'
 version = '1.0'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
-mainClassName = "io.ostenant.springboot.sample.Application"
+mainClassName = "com.zpp.demo.Application"
 
 repositories {
     mavenCentral()
