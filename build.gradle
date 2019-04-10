@@ -30,7 +30,9 @@ repositories {
 }
 
 dependencies {
-    compile('org.springframework.boot:spring-boot-starter-web')
+    compile(
+            'org.springframework.boot:spring-boot-starter-web',
+    )
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
@@ -41,7 +43,12 @@ jar {
 
 distDocker {
     baseImage 'openjdk'
-    maintainer 'harrison'
+    maintainer 'zhongpp'
+    useApi false
+    hostUrl 'http://myserver:4243'
+    apiUsername 'user'
+    apiPassword 'password'
+    apiEmail 'me@mycompany.com'
 }
 
 task dockerBuilder(type: Docker) {
